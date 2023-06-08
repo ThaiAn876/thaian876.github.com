@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>DiemQuynh</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="DiemQuynh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body"style="display: flex; flex-direction:column; align-items:center; ">  
+    <img style="width: 200px; height: auto; " src="https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/347423376_1445754319497577_7919942446044120807_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=oz47PSajROYAX9wfrDe&_nc_ht=scontent.fdad1-1.fna&oh=00_AfDuken3cjem4ZQw9xkTm3dj-v1gzDhDoAXF0hagEkLrcQ&oe=648565DB" alt="">
+    <div class="question">
+        <img class="ttimg" src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-9/352585024_795834795273295_7450309891740416556_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=F4MT_kT9b1gAX_Hb1DG&_nc_ht=scontent.fdad1-1.fna&oh=03_AdSh9fUgyUYgbim9uZlkObvnECHJFs76oSW-8N4jNZ_17A&oe=64A7F892" alt="">
+        <h2 class="ques-des">Chi dong y lam ngiu em nhe</h2>
+        <div>
+            <button class="ans ans1">yes</button>
+            <button class="ans ans2">no</button>
+        </div>
+    </div>
+    <script>
+        const dq = document.querySelector('.ans1')
+        const dqbtn =document.querySelector('.ttimg')
+            function show(){
+                dqbtn.classList.add('open')
+            }
+            dq.addEventListener('click',show)
+            function closeimg(){
+                dqbtn.classList.remove('open')
+            }
+            dqbtn.addEventListener('click', closeimg)
+    </script>
+</body>
